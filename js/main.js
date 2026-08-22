@@ -1,4 +1,6 @@
 (function () {
+  document.documentElement.classList.add('js-anim');
+
   const revealObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
