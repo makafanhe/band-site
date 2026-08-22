@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2029"/>
+      <stop offset="1" stop-color="#3a2c16"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <text x="400" y="300" font-family="serif" font-size="90" fill="#e8b64c" text-anchor="middle">♪</text>
+  <text x="400" y="390" font-family="sans-serif" font-size="28" fill="#9aa0b0" text-anchor="middle">示例照片 · 用你的演出照替换</text>
+</svg>
