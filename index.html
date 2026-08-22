@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>小乐团</title>
+  <meta name="theme-color" content="#0e0f13">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e8b64c'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%230e0f13'%3E%E2%99%AB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#hero">小乐团</a>
+      <div class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#photos">照片</a>
+        <a href="#videos">视频</a>
+        <a href="#files">资料</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="hero-inner reveal">
+      <p class="hero-tag">用心排练 · 真诚演出</p>
+      <h1 class="hero-title">小乐团</h1>
+      <p class="hero-sub">一支热爱音乐的小乐团，记录我们的每一次排练与演出。</p>
+      <div class="hero-actions">
+        <a class="btn gold" href="#photos">看照片</a>
+        <a class="btn ghost" href="#videos">看视频</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="section-title reveal">关于我们</h2>
+        <p class="lead reveal">在这里介绍一下乐团的成立故事、成员、演出经历。</p>
+        <div class="cards">
+          <div class="card reveal"><h3>成员</h3><p>写成员介绍，可配个人照片。</p></div>
+          <div class="card reveal"><h3>演出</h3><p>记录每一次演出时间、地点与现场照片。</p></div>
+          <div class="card reveal"><h3>日常</h3><p>排练花絮、幕后故事，都可以放在这里。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title reveal">照片墙</h2>
+        <p class="lead reveal">把照片放进 photos/ 文件夹，运行 tools/gen_photos.py 后推送即可自动显示。</p>
+        <div id="photo-grid" class="photo-grid"></div>
+      </div>
+    </section>
+
+    <section id="videos" class="section">
+      <div class="wrap">
+        <h2 class="section-title reveal">演出视频</h2>
+        <p class="lead reveal">在 js/videos.js 里填入视频链接即可。</p>
+        <div id="video-grid" class="video-grid"></div>
+      </div>
+    </section>
+
+    <section id="files" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title reveal">资料下载</h2>
+        <p class="lead reveal">乐谱、排练资料等文件，部分需要密码访问。</p>
+        <div class="files-card reveal">
+          <svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          <h3>资料区建设中</h3>
+          <p>密码保护的资料下载区即将上线：支持密码随时更新、每个文件独立管理。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="wrap">
+      <p class="copyright">小乐团 · 联系方式、社交媒体链接放在这里</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox hidden">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="js/videos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
